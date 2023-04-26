@@ -29,6 +29,12 @@ sudo pacman -S terraform ansible
 yay -S azure-cli
 ```
 
+Login on Azure and set your subscription:
+```bash
+az login
+az account set --subscription <id>
+```
+
 ## Configuration
 
 Change the necessary variables to alter the config in the following locations:
