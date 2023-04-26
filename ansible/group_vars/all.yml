@@ -1,0 +1,37 @@
+# group_vars/all.yml
+---
+
+optsec_dir: '/opt'
+
+provider: 'azure'
+disk_size: '128'
+
+users:
+  - name: "fpkmatthi"
+    groups: "sudo"
+    pw_hash: "{{ vault_fpkmatthi_pw_hash }}"
+    ssh_pubkey: "{{ vault_fpkmatthi_ssh_pubkey }}"
+  - name: "diego"
+    groups: "sudo"
+    pw_hash: "{{ vault_diego_pw_hash }}"
+    ssh_pubkey: "{{ vault_diego_ssh_pubkey }}"
+  - name: "shravan"
+    groups: "sudo"
+    pw_hash: "{{ vault_shravan_pw_hash }}"
+    ssh_pubkey: "{{ vault_shravan_ssh_pubkey }}"
+  - name: "maxim"
+    groups: "sudo"
+    pw_hash: "{{ vault_maxim_pw_hash }}"
+    ssh_pubkey: "{{ vault_maxim_ssh_pubkey }}"
+  - name: "arne"
+    groups: "sudo"
+    pw_hash: "{{ vault_arne_pw_hash }}"
+    ssh_pubkey: "{{ vault_arne_ssh_pubkey }}"
+  - name: "loan"
+    groups: "sudo"
+    pw_hash: "{{ vault_loan_pw_hash }}"
+    ssh_pubkey: "{{ vault_loan_ssh_pubkey }}"
+  - name: "florian"
+    groups: "sudo"
+    pw_hash: "{{ vault_florian_pw_hash }}"
+    ssh_pubkey: "{{ vault_florian_ssh_pubkey }}"

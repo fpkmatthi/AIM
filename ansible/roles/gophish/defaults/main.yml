@@ -1,0 +1,8 @@
+gophish_initial_admin_pw: gophish
+
+### NOTE: only v11 works due to GLIBC_2.28 error which is fixed in Ubuntu20 images
+gophish_version: v0.11.0
+gophish_version_hash: f33ac7695850132c04d190f83ef54732421a8d4578be1475d3a819fe6173c462
+
+# gophish_version: v0.12.1
+# gophish_version_hash: 44f598c1eeb72c3b08fa73d57049022d96cea2872283b87a73d21af78a2c6d47

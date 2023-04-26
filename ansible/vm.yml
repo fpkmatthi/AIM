@@ -1,0 +1,7 @@
+---
+
+- hosts: vm
+  become: true
+  roles:
+    - rtoperator
+    - drivemount
