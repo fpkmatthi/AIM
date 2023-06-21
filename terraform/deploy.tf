@@ -19,7 +19,7 @@ locals {
 }
 
 locals {
-  ssh_source_ips  = ["194.78.18.227", local.local_pubip]
+  ssh_source_ips  = ["X.X.X.X", local.local_pubip]
 }
 
 module "vm" {
@@ -27,12 +27,13 @@ module "vm" {
   location                = "westeurope"
   icount                  = "1"
   size                    = "Standard_B2s"
-  username                = "rtadmin"
-  engagement_code         = "E-44861347"
-  project                 = "diegom"
-  owner                   = "matthias.van.de.velde@be.ey.com"
-  team                    = "be2"
-  env                     = "p"
+  username                = "<username>"
+  subid                   = "<subscription_id>"
+  engagement_code         = "<engagement_code>"
+  project                 = "azurevm"
+  owner                   = "<email>"
+  team                    = "<team_name>"
+  env                     = "<environment>"
   disk_size               = "128"
   count_pip               = 1
   ssh_allow_ips           = local.ssh_source_ips

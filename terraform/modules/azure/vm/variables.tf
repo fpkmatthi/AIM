@@ -1,3 +1,8 @@
+variable "subid" {
+  type    = string
+  default = ""
+}
+
 variable "engagement_code" {
   type    = string
   default = "E-694201337"

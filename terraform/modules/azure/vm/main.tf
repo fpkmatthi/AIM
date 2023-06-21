@@ -1,4 +1,5 @@
 provider "azurerm" {
+  subscription_id = var.subid
   features {}
   skip_provider_registration = true
 }

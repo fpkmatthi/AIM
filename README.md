@@ -2,8 +2,7 @@
 
 **A**zure **I**nstant **V**M
 
-Basic idempotent infra to deploy a single VM in azure with a security-by-design configuration. Used when you need a quick Linux environment for testing.
-
+Basic idempotent infra to deploy a single VM in azure with a security-by-design configuration. I mostly use this when I need a quick Linux environment that can be shared with others.
 
 ## Current build
 
@@ -29,10 +28,9 @@ sudo pacman -S terraform ansible
 yay -S azure-cli
 ```
 
-Login on Azure and set your subscription:
+Login on Azure and set your subscription in `./terraform/deploy.tf`:
 ```bash
 az login
-az account set --subscription <id>
 ```
 
 ## Configuration
